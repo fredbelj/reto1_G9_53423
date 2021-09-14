@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>Formulario</title>
+  </head>
+
+  <body id="bodyregistro">
+    <hr>
+    <div class="center">
+      <h2 >Formulario de Registro</h2>
+      <form action="registro.html" target="_blank" id="registrar_usuario_form" name="registrar_usuario_form">
+        <fieldset>
+          <legend>Datos Personales:</legend>
+            <div class="caja">
+              <label for="nombre_usuario">Nombres:</label><br>
+              <input type="text" id="nombre_usuario" name="nombre"class="input" required placeholder="nombres">
+            </div> 
+            <div class="caja">
+              <label for="apellido">Apellidos:</label><br>
+              <input type="text" id="apellido" name="apellido" class="input" required placeholder="apellidos">
+            </div>
+            <div class="caja">
+              <label for="“anoNacimiento_usuario">Año de nacimiento:</label><br>
+                <input id="“anoNacimiento_usuario" type="number" name="“anoNacimiento_usuario" min="1900" max="2021"  class="select" required placeholder="1900-2021" required>>
+            </div> 
+            <div class="caja">
+              <br>
+              <label for="generom">Masculino:</label>
+              <input type="radio" id="generom" name="genero" value="masculino" class="input" required placeholder="Género">
+              <label for="generof">Femenino:</label>
+              <input type="radio" id="generof" name="genero" value="femenino" class="input" required placeholder="Género">
+            </div>
+            <div class="caja">
+              <label for="tipoDocu">Tipo de Documento:</label><br>
+                <select id="tipoDocu" name="tipoDocu"  class="select" required>
+                    <option value="1" selected>Seleccione</option>
+                    <option value="2" >CC</option>
+                    <option value="3" >Pasaporte</option><
+                    <option value="4" >Tarjeta de Identidad</option><
+                    <option value="5" >Carné estudiantil</option><
+                </select>
+            </div> 
+            <div class="caja">
+              <label for="numeroDocume"># de documento:</label><br>
+              <input type="text" id="numeroDocume" name="numeroDocume" class="input" required placeholder="xxxxxxxxx">
+            </div>
+        </fieldset>
+        <hr>
+        <fieldset>
+          <legend>Informacion de Contacto:</legend>
+            <div class="caja">
+              <label for="email">Correo Electrónico:</label><br>
+              <input type="email" id="email" name="email" class="input" required placeholder="email@address.com">
+            </div> 
+            <div class="caja">
+              <label for="telefono">Teléfono:</label><br>
+              <input type="text" id="telefono" name="telefono" class="input" required placeholder="xxxxxxxxx">
+            </div>
+            <div class="caja">
+              <label for="contrasena_usuario">Contraseña:</label><br>
+              <input type="password" id="contrasena_usuario" name="contrasena_usuario" class="input" required placeholder="**********">
+            </div> 
+            <div class="caja">
+              <label for="check_contrasena">Confirme Contraseña:</label><br>
+              <input type="password" id="check_contrasena" name="check_contrasena" class="input" required placeholder="**********">
+            </div>
+        </fieldset>
+          <hr>
+        <fieldset>
+          <legend>Informacion de Ubicación:</legend>
+            <div class="caja">
+              <label for="pais">País:</label><br>
+              <input type="text" id="pais" name="pais" value="" class="select" required placeholder="País" >
+            </div> 
+            <div class="caja">
+              <label for="ciudad">Ciudad:</label><br>
+              <input type="text" id="ciudad" name="ciudad" value="" class="select" required placeholder="Ciudad">
+            </div>
+            <div class="caja">
+                <label for="direccion" class="infoUbica">Dirección:</label><br>
+                <input type="text" id="direccion" name="direccion" value="" class="inputDireccion" required placeholder="cll, cr, av, sur, norte">
+            </div>
+        </fieldset>
+          <hr>
+          <input id="enviar_registro" class="btn1 btn-primary" type="submit" value="Submit">
+          <input  class="btn1 btn-secondary" type="reset" value="Borrar">
+      </form>
+    </div>
+    <hr>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/forms.js"></script>
+  </body>
+</html>
